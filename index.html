@@ -3,16 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Naslovna Stranica Web Aplikacije</title>
+    <title>Dijeljenje 3D Modela - Naslovna Stranica</title>
     <link rel="stylesheet" href="styles.css">
     <style>
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
         }
         header {
-            background-color: #4CAF50;
+            background-color: #1a1a1a;
             color: white;
             padding: 1rem;
             text-align: center;
@@ -21,6 +23,7 @@
             display: flex;
             justify-content: center;
             background-color: #333;
+            padding: 0.5rem;
         }
         nav a {
             color: white;
@@ -33,12 +36,28 @@
             color: black;
         }
         .hero {
-            background-color: #f4f4f4;
-            padding: 2rem;
+            background: url('hero-background.jpg') no-repeat center center/cover;
+            padding: 5rem 2rem;
             text-align: center;
+            color: white;
         }
         .hero h1 {
+            font-size: 3rem;
             margin: 0;
+        }
+        .hero p {
+            font-size: 1.2rem;
+            margin: 1rem 0;
+        }
+        .hero a {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        .hero a:hover {
+            background-color: #45a049;
         }
         .content {
             padding: 2rem;
@@ -46,48 +65,55 @@
         .section {
             margin-bottom: 2rem;
         }
+        .section h2 {
+            color: #4CAF50;
+        }
+        .section p {
+            margin: 0.5rem 0;
+        }
         footer {
             background-color: #333;
             color: white;
             text-align: center;
             padding: 1rem;
-            position: fixed;
-            width: 100%;
+            position: relative;
             bottom: 0;
+            width: 100%;
         }
     </style>
 </head>
 <body>
     <header>
-        <h1>Dobrodošli u našu Web Aplikaciju</h1>
+        <h1>Dijeljenje 3D Modela</h1>
     </header>
     <nav>
         <a href="#home">Početna</a>
         <a href="#about">O nama</a>
-        <a href="#services">Usluge</a>
+        <a href="#models">Modeli</a>
         <a href="#contact">Kontakt</a>
     </nav>
     <div class="hero" id="home">
-        <h1>Transformirajte svoj posao s našom aplikacijom</h1>
-        <p>Jednostavno, brzo i pouzdano rješenje za vaše poslovne potrebe.</p>
-        <a href="#services" style="background-color: #4CAF50; color: white; padding: 10px 20px; text-decoration: none;">Saznaj Više</a>
+        <h1>Podijelite i istražite nevjerojatne 3D modele</h1>
+        <p>Platforma za stvaranje, dijeljenje i preuzimanje visokokvalitetnih 3D modela.</p>
+        <a href="#models">Pogledaj modele</a>
     </div>
     <div class="content">
         <div class="section" id="about">
             <h2>O nama</h2>
-            <p>Naša tvrtka je specijalizirana za razvoj web aplikacija koje pomažu u poboljšanju poslovanja.</p>
+            <p>Naša platforma omogućuje korisnicima dijeljenje i preuzimanje 3D modela iz različitih kategorija. Pružamo alate za jednostavno upravljanje i pregled vaših kreacija.</p>
         </div>
-        <div class="section" id="services">
-            <h2>Usluge</h2>
-            <p>Nudimo širok spektar usluga, uključujući razvoj prilagođenih web rješenja, savjetovanje i podršku.</p>
+        <div class="section" id="models">
+            <h2>Najnoviji modeli</h2>
+            <p>Ovdje možete pronaći najnovije 3D modele koje su podijelili naši korisnici. Svaki model dolazi s detaljnim opisom i mogućnošću pregleda prije preuzimanja.</p>
+            <!-- Ovdje bi mogli biti prikazani neki istaknuti modeli sa slikama -->
         </div>
         <div class="section" id="contact">
             <h2>Kontakt</h2>
-            <p>Kontaktirajte nas na email: info@nasatvrtka.hr ili na telefon: 012/345-6789.</p>
+            <p>Za sva pitanja ili podršku, slobodno nas kontaktirajte putem emaila: support@3dmodels.hr ili na telefon: 012/345-6789.</p>
         </div>
     </div>
     <footer>
-        <p>&copy; 2024 Naša Tvrtka. Sva prava pridržana.</p>
+        <p>&copy; 2024 Dijeljenje 3D Modela. Sva prava pridržana.</p>
     </footer>
 </body>
 </html>
