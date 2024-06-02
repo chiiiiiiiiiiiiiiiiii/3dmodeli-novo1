@@ -1,12 +1,93 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="hr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>blabalabla</title>
+    <title>Naslovna Stranica Web Aplikacije</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 1rem;
+            text-align: center;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #333;
+        }
+        nav a {
+            color: white;
+            padding: 14px 20px;
+            text-decoration: none;
+            text-align: center;
+        }
+        nav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+        .hero {
+            background-color: #f4f4f4;
+            padding: 2rem;
+            text-align: center;
+        }
+        .hero h1 {
+            margin: 0;
+        }
+        .content {
+            padding: 2rem;
+        }
+        .section {
+            margin-bottom: 2rem;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
 </head>
 <body>
-    <p>Upomooooooc</p>
-    
+    <header>
+        <h1>Dobrodošli u našu Web Aplikaciju</h1>
+    </header>
+    <nav>
+        <a href="#home">Početna</a>
+        <a href="#about">O nama</a>
+        <a href="#services">Usluge</a>
+        <a href="#contact">Kontakt</a>
+    </nav>
+    <div class="hero" id="home">
+        <h1>Transformirajte svoj posao s našom aplikacijom</h1>
+        <p>Jednostavno, brzo i pouzdano rješenje za vaše poslovne potrebe.</p>
+        <a href="#services" style="background-color: #4CAF50; color: white; padding: 10px 20px; text-decoration: none;">Saznaj Više</a>
+    </div>
+    <div class="content">
+        <div class="section" id="about">
+            <h2>O nama</h2>
+            <p>Naša tvrtka je specijalizirana za razvoj web aplikacija koje pomažu u poboljšanju poslovanja.</p>
+        </div>
+        <div class="section" id="services">
+            <h2>Usluge</h2>
+            <p>Nudimo širok spektar usluga, uključujući razvoj prilagođenih web rješenja, savjetovanje i podršku.</p>
+        </div>
+        <div class="section" id="contact">
+            <h2>Kontakt</h2>
+            <p>Kontaktirajte nas na email: info@nasatvrtka.hr ili na telefon: 012/345-6789.</p>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2024 Naša Tvrtka. Sva prava pridržana.</p>
+    </footer>
 </body>
 </html>
