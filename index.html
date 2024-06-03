@@ -3,18 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dijeljenje 3D Modela - Naslovna Stranica</title>
+    <title>3D Modeli - Dijeljenje 3D Modela</title>
     <link rel="stylesheet" href="styles.css">
     <style>
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f4;
-            color: #333;
+            background-color: #f0f0f0;
         }
         header {
-            background-color: #1a1a1a;
+            background-color: #333;
             color: white;
             padding: 1rem;
             text-align: center;
@@ -22,8 +21,7 @@
         nav {
             display: flex;
             justify-content: center;
-            background-color: #333;
-            padding: 0.5rem;
+            background-color: #444;
         }
         nav a {
             color: white;
@@ -36,14 +34,14 @@
             color: black;
         }
         .hero {
-            background: url('hero-background.jpg') no-repeat center center/cover;
-            padding: 5rem 2rem;
-            text-align: center;
+            background-color: #1e1e1e;
             color: white;
+            padding: 4rem 2rem;
+            text-align: center;
         }
         .hero h1 {
-            font-size: 3rem;
             margin: 0;
+            font-size: 2.5rem;
         }
         .hero p {
             font-size: 1.2rem;
@@ -54,19 +52,21 @@
             color: white;
             padding: 10px 20px;
             text-decoration: none;
+            font-size: 1rem;
             border-radius: 5px;
-        }
-        .hero a:hover {
-            background-color: #45a049;
         }
         .content {
             padding: 2rem;
         }
         .section {
             margin-bottom: 2rem;
+            background-color: white;
+            padding: 1rem;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
         .section h2 {
-            color: #4CAF50;
+            margin-top: 0;
         }
         .section p {
             margin: 0.5rem 0;
@@ -76,44 +76,47 @@
             color: white;
             text-align: center;
             padding: 1rem;
-            position: relative;
-            bottom: 0;
-            width: 100%;
         }
     </style>
 </head>
 <body>
     <header>
-        <h1>Dijeljenje 3D Modela</h1>
+        <h1>3D Modeli - Dijeljenje 3D Modela</h1>
     </header>
     <nav>
         <a href="#home">Početna</a>
         <a href="#about">O nama</a>
         <a href="#models">Modeli</a>
+        <a href="#upload">Prenesi</a>
         <a href="#contact">Kontakt</a>
     </nav>
     <div class="hero" id="home">
-        <h1>Podijelite i istražite nevjerojatne 3D modele</h1>
-        <p>Platforma za stvaranje, dijeljenje i preuzimanje visokokvalitetnih 3D modela.</p>
-        <a href="#models">Pogledaj modele</a>
+        <h1>Podijelite i istražite 3D modele</h1>
+        <p>Platforma za dijeljenje, preuzimanje i pregledavanje 3D modela</p>
+        <a href="#models">Pregledaj Modele</a>
     </div>
     <div class="content">
         <div class="section" id="about">
             <h2>O nama</h2>
-            <p>Naša platforma omogućuje korisnicima dijeljenje i preuzimanje 3D modela iz različitih kategorija. Pružamo alate za jednostavno upravljanje i pregled vaših kreacija.</p>
+            <p>Naša platforma omogućuje korisnicima da dijele svoje 3D modele s cijelim svijetom. Pomažemo kreatorima da se povežu i inspirišu jedni druge.</p>
         </div>
         <div class="section" id="models">
-            <h2>Najnoviji modeli</h2>
-            <p>Ovdje možete pronaći najnovije 3D modele koje su podijelili naši korisnici. Svaki model dolazi s detaljnim opisom i mogućnošću pregleda prije preuzimanja.</p>
-            <!-- Ovdje bi mogli biti prikazani neki istaknuti modeli sa slikama -->
+            <h2>Najnoviji 3D modeli</h2>
+            <p>Pregledajte najnovije dodane modele i pronađite inspiraciju za vlastite projekte.</p>
+            <!-- Ovdje možete dodati dinamički sadržaj, poput galerije 3D modela -->
+        </div>
+        <div class="section" id="upload">
+            <h2>Prenesite svoj model</h2>
+            <p>Prenesite svoje 3D modele i podijelite ih s našom zajednicom.</p>
+            <!-- Ovdje možete dodati obrazac za prijenos modela -->
         </div>
         <div class="section" id="contact">
             <h2>Kontakt</h2>
-            <p>Za sva pitanja ili podršku, slobodno nas kontaktirajte putem emaila: support@3dmodels.hr ili na telefon: 012/345-6789.</p>
+            <p>Kontaktirajte nas na email: info@3dmodeli.hr ili na telefon: 012/345-6789.</p>
         </div>
     </div>
     <footer>
-        <p>&copy; 2024 Dijeljenje 3D Modela. Sva prava pridržana.</p>
+        <p>&copy; 2024 3D Modeli. Sva prava pridržana.</p>
     </footer>
 </body>
 </html>
